@@ -107,17 +107,17 @@ int main(void) {
 
 
 printf("JJI");
-    char sentence[1000];
+//     char sentence[1000];
 
-    // creating file pointer to work with files
+//     // creating file pointer to work with files
 
-    // opening file in writing mode
-    FILE * fil;
+//     // opening file in writing mode
+//     FILE * fil;
 
-   fil = fopen ("file.txt", "w+");
-   fprintf(fil, "%s %s %s %d", "We", "are", "in", 2012);
+//    fil = fopen ("file.txt", "w+");
+//    fprintf(fil, "%s %s %s %d", "We", "are", "in", 2012);
    
-   fclose(fil);
+//    fclose(fil);
 
     closedir(procdir);
     return 0;
