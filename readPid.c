@@ -26,6 +26,7 @@ int is_pid_folder(const struct dirent *entry) {
 }
 
 int main(void) {
+    printf("JJI1");
     DIR *procdir;
     FILE *fp;
     struct dirent *entry;
@@ -75,6 +76,7 @@ int main(void) {
 
         fclose(fp);
     }
+    printf("JJI2");
 
     // for(int i=0;i<10;i++) {
     //     printf("%5d, %lu\n", ans[i].pid, ans[i].uTime);
