@@ -104,28 +104,18 @@ int main(void) {
 
 
 
+printf("JJI");
     char sentence[1000];
 
     // creating file pointer to work with files
-    FILE *fptr;
 
     // opening file in writing mode
-    fptr = fopen("program.txt", "w");
+    FILE * fil;
 
-    // exiting program 
-    // if (fptr == NULL) {
-    //     printf("Error!");
-    //     exit(1);
-    // }
-    
-    // printf("Enter a sentence:\n");
-    // fprintf(fptr, "%s", sentence);
-    for(int i=0;i<counter;i++) {
-        fprintf(fptr, "%5d", ans[i].pid);
-        fprintf(fptr, "%lu", ans[i].uTime);
-        fprintf(fptr, "%lu", ans[i].xTime);
-    }
-    fclose(fptr);
+   fil = fopen ("file.txt", "w+");
+   fprintf(fil, "%s %s %s %d", "We", "are", "in", 2012);
+   
+   fclose(fil);
 
     closedir(procdir);
     return 0;
