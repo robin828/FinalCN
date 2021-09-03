@@ -114,7 +114,7 @@ printf("JJI");
 //     // opening file in writing mode
     FILE *fil;
 
-   fil = fopen ("file.txt", "w");
+//    fil = fopen ("file.txt", "w");
 //    fprintf(fil, "%s %s %s %d", "We", "are", "in", 2012);
    
    fclose(fil);
