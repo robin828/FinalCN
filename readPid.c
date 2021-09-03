@@ -113,10 +113,11 @@ int main(void) {
     fptr = fopen("program.txt", "w");
 
     // exiting program 
-    if (fptr == NULL) {
-        printf("Error!");
-        exit(1);
-    }
+    // if (fptr == NULL) {
+    //     printf("Error!");
+    //     exit(1);
+    // }
+    
     // printf("Enter a sentence:\n");
     // fprintf(fptr, "%s", sentence);
     for(int i=0;i<counter;i++) {
